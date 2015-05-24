@@ -1,0 +1,87 @@
+body { overflow:hidden;}
+*,div,button,html,a,input,body { padding:0; margin: 0;  }
+
+#container { width: 100%; height: 100% }
+
+.instrument {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  text-align: center;
+  font-size: 13px;
+}
+
+.instrument>div {
+  display: inline-block;
+  width: 100%;
+}
+
+.instrument span {
+  overflow: hidden;
+  text-shadow: 0 0 8 px white;
+}
+
+.instrument button {
+  padding: 1px;
+  font-size: 9px;
+  width: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.instrument div button:first-child { float: left; }
+.instrument div button:last-child { float: right; }
+
+/*.instrument>div:after { clear: both;}*/
+
+.instrument .dragfield {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+body {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: none;
+  -webkit-user-drag: none;
+}
+
+
+
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link.licensing {
+  stroke: green;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}

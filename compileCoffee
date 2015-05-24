@@ -1,0 +1,2 @@
+cat coffee/* | coffee -c --stdio > public/js/main.js
+cat coffee/* | coffee -cw --stdio > public/js/main.js
