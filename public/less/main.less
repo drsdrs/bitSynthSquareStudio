@@ -1,0 +1,15 @@
+// VARIABLES
+@base: #f938ab;
+
+body {
+  margin: 0; padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+#views {
+  display: inline-block;
+  #editView{ @import (once) "editView.less"; }
+  #synthView{ @import (once) "synthView.less"; }
+}
